@@ -1,8 +1,117 @@
-#root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+
+.mainContainer{
+  display: flex;
+  margin: auto;
+  width: 1280px;
+  height: 100vh;
+}
+.heroSection{
+  &-Bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 75vh;
+    background:rgba(0, 0, 0, 0.7) url('../assets//images/header-image.png');
+    background-size: cover;
+    background-blend-mode: darken;
+    border-bottom: 8px solid #363636;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    & h1,p{
+      color: white;
+      margin: 1rem 0 1rem 0;
+    }
+    & h1{
+      font-size: 54px;
+    }
+    & p{
+      font-size: 24px;
+    }
+    &-interaction{
+      min-width: 38rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & input{
+        min-width: 26rem;
+        min-height: 3rem;
+        border-radius: 6px;
+        border: none;
+        background-color: #363636;
+        opacity: 0.75;
+      }
+
+      & ::placeholder{
+        padding: 10px;
+        color: white;
+      }
+      & button{
+        min-width: 11rem;
+        min-height: 3rem;
+        background-color: #e71621;
+        border-radius: 6px;
+        border: none;
+        box-shadow: 1px 1px 1px #d60510;
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+      }
+    }
   }
+
+  &-nav{
+    display: flex;
+    position: absolute;
+    min-width: 60vw;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    justify-content: space-between;
+    
+    &-logo{
+      &-img{
+        max-width: 10rem;
+        margin: .5rem 0;
+      }
+    }
+
+    &-itemBox{
+        display: flex;
+        min-width: 15rem;
+        justify-content: space-between;
+        align-items: center;
+
+      & select{
+        min-width: 7.2rem;
+        min-height: 1.8rem;
+        border-radius: 6px;
+        background-color: black;
+        border-color: white;
+        border: 1px 1px solid ;
+      }
+      & button{
+        min-width: 6.5rem;
+        min-height:  1.8rem;
+        background-color: #e71621;
+        border-radius: 6px;
+        border: none;
+        box-shadow: 1px 1px 1px #d60510;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
   
   
