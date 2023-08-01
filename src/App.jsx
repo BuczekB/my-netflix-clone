@@ -1,6 +1,10 @@
 import './style/App.scss'
 
 import Logo from './assets/images/logo.png'
+import feature1 from './assets/images/feature-1.png'
+import feature2 from './assets/images/feature-2.png'
+import feature3 from './assets/images/feature-3.png'
+import feature4 from './assets/images/feature-4.png'
 
 function App() {
  
@@ -31,6 +35,48 @@ function App() {
                 <button>Zaloguj się</button>
               </div>
             </nav>
+          </section>
+          <section className='aboutSection'>
+            <div className='aboutSection-singleBox'>
+              <div className='aboutSection-singleBox-textBox'>
+              <h2>Oglądaj na telewizorze</h2>
+              <p>Oglądaj na telewizorach Smart TV, konsolach PlayStation i Xbox, odtwarzaczach Chromecast, Apple TV oraz Blu-ray i nie tylko.</p>
+              </div>
+              <div>
+                <img src={feature1} alt="" />
+              </div>
+              <div className='aboutSection-singleBox-borderB'></div>
+            </div>
+            <div className='aboutSection-singleBox'>
+            <div>
+                <img src={feature2} alt="" />
+              </div>
+              <div className='aboutSection-singleBox-textBox'>
+              <h2>Pobierz ulubione tytuły i oglądaj offline</h2>
+              <p>Zapisz ulubione tytuły, aby zawsze mieć coś do obejrzenia.</p>
+              </div>
+              <div className='aboutSection-singleBox-borderB'></div>
+            </div>
+            <div className='aboutSection-singleBox'>
+              <div className='aboutSection-singleBox-textBox'>
+              <h2>Oglądaj wszędzie</h2>
+              <p>Oglądaj filmy, seriale i programy bez ograniczeń na telefonie, tablecie, laptopie i telewizorze.</p>
+              </div>
+              <div>
+                <img src={feature3} alt="" />
+              </div>
+              <div className='aboutSection-singleBox-borderB'></div>
+            </div>
+            <div className='aboutSection-singleBox'>
+            <div>
+                <img src={feature4} alt="" />
+              </div>
+              <div className='aboutSection-singleBox-textBox'>
+              <h2>Utwórz profile dla dzieci</h2>
+              <p>Pozwól dzieciom przeżywać przygody w towarzystwie uwielbianych bohaterów — w specjalnej sekcji serwisu oferowanej bezpłatnie w ramach członkostwa.</p>
+              </div>
+              <div className='aboutSection-singleBox-borderB'></div>
+            </div>
           </section>
       </div>
     </div>
