@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './style/App.scss'
 
 import Logo from './assets/images/logo.png'
@@ -7,10 +8,17 @@ import feature3 from './assets/images/feature-3.png'
 import feature4 from './assets/images/feature-4.png'
 
 function App() {
+
+
+  const [isVisible, setIsVisible] = useState(false)
+
+  const questionAndAnswer = () =>{
+      setIsVisible(!isVisible)
+  }
  
 
   return (
-    <div className='container'>
+   
       <div className='mainContainer'>
           <section className='heroSection'>
             <div className='heroSection-Bg'>
@@ -78,8 +86,47 @@ function App() {
               <div className='aboutSection-singleBox-borderB'></div>
             </div>
           </section>
+          <section className='infoSection'>
+            <div className='infoSection-container'>
+              
+              <div className='infoSection-container-question'>
+              <h1>Często zadawane pytania</h1>
+              <div className='infoSection-container-singleBox' onClick={questionAndAnswer}>
+                Czym jest Netflix? 
+              <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48" fill='white'><path d="M450-450H200v-60h250v-250h60v250h250v60H510v250h-60v-250Z"/></svg>
+              </div>
+              <div className={isVisible ? 'infoSection-container-answerOn' : 'infoSection-container-answerOff'}>
+             <p>
+             Netflix to usługa przesyłania strumieniowego, dzięki której użytkownicy mogą korzystać z szerokiej oferty nagradzanych filmów, seriali, programów, anime
+               oraz produkcji dokumentalnych za pośrednictwem tysięcy urządzeń połączonych z internetem.
+              Możesz oglądać do woli, gdziekolwiek jesteś — bez reklam i za jedną miesięczną opłatą. Co tydzień dodajemy nowe tytuły, więc zawsze jest coś ciekawego do obejrzenia.
+             </p>
+              </div>
+              
+              </div>
+              <div className='infoSection-container-singleBox'>
+                Czym jest Netflix?
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48" fill='white'><path d="M450-450H200v-60h250v-250h60v250h250v60H510v250h-60v-250Z"/></svg></div>
+              <div className='infoSection-container-singleBox'>
+                Czym jest Netflix?
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48" fill='white'><path d="M450-450H200v-60h250v-250h60v250h250v60H510v250h-60v-250Z"/></svg></div>
+              <div className='infoSection-container-singleBox'>
+                Czym jest Netflix?
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48" fill='white'><path d="M450-450H200v-60h250v-250h60v250h250v60H510v250h-60v-250Z"/></svg></div>
+              <div className='infoSection-container-singleBox'>
+                Czym jest Netflix?
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48" fill='white'><path d="M450-450H200v-60h250v-250h60v250h250v60H510v250h-60v-250Z"/></svg></div>
+                <div className='infoSection-container-inputBox'>
+                <p>Zaczynamy oglądać? Wprowadź adres e‑mail, aby utworzyć lub odnowić konto.</p>
+                 <div>
+                 <input placeholder='Adres e-mail'></input>
+                 <button>Rozpocznij</button>
+                 </div>
+                </div>
+              </div>
+          </section>
       </div>
-    </div>
+    
   )
 }
 

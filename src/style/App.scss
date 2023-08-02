@@ -1,6 +1,7 @@
 
 .mainContainer{
   display: flex;
+  flex-direction: column;
   margin: auto;
   width: 1280px;
   height: auto;
@@ -158,7 +159,107 @@
    }
   }
  }
- 
+ .infoSection{
+  position: relative;
+    &-container{
+      z-index: 1111;
+      max-width: 100%;
+      max-height: 100vh;
+      min-height: 70vh;
+      margin: 8rem 0;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+     
+
+      & h1{
+        font-size: 52px;
+      }
+
+      &-question{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+      }
+      &-answerOn{
+        min-height: 10vh;
+        background-color: #333333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding: 0 15px;
+        line-height: 25px;
+        margin-bottom:0.3rem;
+        & p{
+          font-size: 24px;
+        }
+      }
+      &-answerOff{
+       display: none;
+      }
+
+      &-singleBox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        max-width: 100%;
+        min-width: 90%;
+        min-height: 9vh;
+        border: #363636 solid 1px;
+        font-size: 26px;
+        padding: 1rem 1rem;
+        background-color: #333333;
+        margin: 0.3rem 0;
+        
+        &:hover{
+          background-color: #555555;
+          cursor: pointer;
+        }
+      }
+      &-inputBox{
+        min-width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0;
+  
+        & input{
+          min-width: 26rem;
+          min-height: 3rem;
+          border-radius: 6px;
+          border: none;
+          background-color: #363636;
+          opacity: 0.75;
+          margin: 0 1rem;
+        }
+  
+        & ::placeholder{
+          padding: 10px;
+          color: white;
+        }
+        & button{
+          min-width: 11rem;
+          min-height: 3rem;
+          background-color: #e71621;
+          border-radius: 6px;
+          border: none;
+          box-shadow: 1px 1px 1px #d60510;
+          color: white;
+          font-size: 22px;
+          font-weight: bold;
+        }
+        & p{
+          font-size: 20px;
+        }
+      }
+    }
+    
+ }
 
 
  
