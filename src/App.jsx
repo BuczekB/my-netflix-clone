@@ -123,8 +123,44 @@ function App() {
                  <button>Rozpocznij</button>
                  </div>
                 </div>
+                <div className='infoSection-container-border'></div>
               </div>
           </section>
+          <footer className='fotter'>
+            <h3>Pytania? Zadzwoń pod numer 00 800 112 4392</h3>
+            <div className='fotter-box'>
+              <div className='fotter-box-questions'>
+                  <ul>
+                    <li>Często zadawane pytania</li>
+                    <li>Media Center</li>
+                    <li>Zrealizuj karty podarunkowe</li>
+                    <li>Warunki korzystania</li>
+                    <li>Informacje o firmie</li>
+                    <li>Gwarancja prawna</li>
+                  </ul>
+              </div>
+              <div className='fotter-box-questions'>
+                  <ul>
+                    <li>Często zadawane pytania</li>
+                    <li>Media Center</li>
+                    <li>Zrealizuj karty podarunkowe</li>
+                    <li>Warunki korzystania</li>
+                    <li>Informacje o firmie</li>
+                    <li>Gwarancja prawna</li>
+                  </ul>
+              </div>
+              <div className='fotter-box-questions'>
+                  <ul>
+                    <li>Często zadawane pytania</li>
+                    <li>Media Center</li>
+                    <li>Zrealizuj karty podarunkowe</li>
+                    <li>Warunki korzystania</li>
+                    <li>Informacje o firmie</li>
+                    <li>Gwarancja prawna</li>
+                  </ul>
+              </div>
+            </div>
+          </footer>
       </div>
     
   )
