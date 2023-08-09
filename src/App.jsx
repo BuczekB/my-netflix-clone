@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './style/App.scss'
 
 import Logo from './assets/images/logo.png'
@@ -11,7 +10,37 @@ import { SingleItemQA } from './SingleItemQA'
 function App() {
 
 
+const dataQA = [
+  {
+    question: 'Czym jest Neftflix?',
+    answer: 'test1'
+  },
+  {
+    question: 'Ile kosztuje korzystanie z serwisu Netflix?',
+    answer: 'test1'
+  },
+  {
+    question: 'Gdzie moge oglądać?',
+    answer: 'test1'
+  },
+  {
+    question: 'Jak zrezygnować z członkostwa?',
+    answer: 'test1'
+  },
+  {
+    question: 'Jakie materiały mogę oglądać w serwisie Netflix?',
+    answer: 'test1'
+  }
+]
 
+const listOfQAndA = dataQA.map((item) =>{
+  return(
+    <SingleItemQA question={item.question} answer={item.answer} />
+  )
+})
+
+
+console.log(dataQA[0].question);
 
   return (
    
@@ -85,10 +114,7 @@ function App() {
           <section className='infoSection'>
             <h1>Często zadawane pytania</h1>
            <div>
-           <SingleItemQA/>
-            <SingleItemQA/>
-            <SingleItemQA/>
-            <SingleItemQA/>
+         {listOfQAndA}
            </div>
           </section>
           <footer className='fotter'>
